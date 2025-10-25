@@ -19,8 +19,10 @@ namespace SauceDemo.Tests.Pages
 
             //explicit wait de 10 segundos
             Wait = new WebDriverWait(new SystemClock(), driver, TimeSpan.FromSeconds(10), TimeSpan.FromMilliseconds(250));
+        }
 
-            protected IWebElement FindVisible(By locator)
+        //Metodo para encontrar un elemento visible
+        protected IWebElement FindVisible(By locator)
         {
             return Wait.Until(d =>
             {
