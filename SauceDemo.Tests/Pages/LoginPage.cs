@@ -46,13 +46,30 @@ namespace SauceDemo.Tests.Pages
                 el.SendKeys(value);
         }
 
+        //Limpiar imputs
+        public void ClearUsername()
+        {
+            var el = FindVisible(Username);
+            el.Click();
+            el.SendKeys(Keys.Control + "a");
+            el.SendKeys(Keys.Delete);
+        }
+
+        public void ClearPassword()
+        {
+            var el = FindVisible(Password);
+            el.Click();
+            el.SendKeys(Keys.Control + "a");
+            el.SendKeys(Keys.Delete);
+        }
+
         //Hacer click en el boton de login
         public void ClickLogin()
         {
             FindVisible(LoginButton).Click();
         }
 
-        // 🔹 Obtener mensaje de error (si existe)
+        //Obtener mensaje de error (si existe)
         public string? ReadError()
         {
             try
@@ -65,7 +82,7 @@ namespace SauceDemo.Tests.Pages
             }
         }
 
-        // 🔹 Esperar y validar el título del dashboard ("Swag Labs")
+        //Esperar y validar el título del dashboard
         public bool WaitTitleIsSwagLabs()
         {
             var wait = new WebDriverWait(new SystemClock(), Driver, TimeSpan.FromSeconds(10), TimeSpan.FromMilliseconds(250));
