@@ -30,7 +30,6 @@ namespace SauceDemo.Tests.Pages
                 return el.Displayed ? el : null;
             });
         }
-
     }
 }
 

@@ -11,17 +11,18 @@ namespace SauceDemo.Tests.Pages
     public class LoginPage : BasePage
     {
         // locators
-        private readonly By Username = By.XPath("//input[@id='user-name']");
-        private readonly By Password = By.XPath("//input[@id='password']");
-        private readonly By LoginButton = By.XPath("//input[@id='login-button']");
-        private readonly By ErrorMessage = By.XPath("//h3[@data-test='error']");
+        protected readonly By Username = By.XPath("//input[@id='user-name']");
+        protected readonly By Password = By.XPath("//input[@id='password']");
+        protected readonly By LoginButton = By.XPath("//input[@id='login-button']");
+        protected readonly By ErrorMessage = By.XPath("//h3[@data-test='error']");
+
 
         //Constructor: recibe el driver y lo pasa a la clase base
         public LoginPage(IWebDriver driver) : base(driver)
         {
         }
 
-        //Methods
+        //Metodos
         //Ir a la pagina principal
         public void GoTo()
         {
@@ -63,7 +64,6 @@ namespace SauceDemo.Tests.Pages
             el.SendKeys(Keys.Delete);
         }
 
-        //Hacer click en el boton de login
         public void ClickLogin()
         {
             FindVisible(LoginButton).Click();
@@ -83,10 +83,14 @@ namespace SauceDemo.Tests.Pages
         }
 
         //Esperar y validar el título del dashboard
-        public bool WaitTitleIsSwagLabs()
+        public string WaitForTitle()
         {
             var wait = new WebDriverWait(new SystemClock(), Driver, TimeSpan.FromSeconds(10), TimeSpan.FromMilliseconds(250));
-            return wait.Until(d => d.Title == "Swag Labs");
+
+            // Espera hasta que el título deje de estar vacío
+            wait.Until(d => !string.IsNullOrEmpty(d.Title));
+
+            return Driver.Title;
         }
     }
 }

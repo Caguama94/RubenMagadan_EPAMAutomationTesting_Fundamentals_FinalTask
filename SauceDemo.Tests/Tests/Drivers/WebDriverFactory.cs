@@ -2,6 +2,8 @@
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Edge;
+using WebDriverManager;
+using WebDriverManager.DriverConfigs.Impl;
 
 namespace SauceDemo.Tests.Tests.Drivers
 {
@@ -14,20 +16,30 @@ namespace SauceDemo.Tests.Tests.Drivers
             switch (browser.ToLower())
             {
                 case "firefox":
-                    driver = new FirefoxDriver();
+                    new DriverManager().SetUpDriver(new FirefoxConfig());
+                    var ffOptions = new FirefoxOptions();
+                    // Firefox a veces no respeta --start-maximized
+                    ffOptions.AddArgument("--width=1920");
+                    ffOptions.AddArgument("--height=1080");
+                    driver = new FirefoxDriver(ffOptions);
                     break;
 
                 case "edge":
-                    driver = new EdgeDriver();
+                    new DriverManager().SetUpDriver(new EdgeConfig());
+                    var edgeOptions = new EdgeOptions();
+                    edgeOptions.AddArgument("--start-maximized");
+                    driver = new EdgeDriver(edgeOptions);
                     break;
 
-                default:
-                    driver = new ChromeDriver();
+                default: // chrome
+                    new DriverManager().SetUpDriver(new ChromeConfig());
+                    var chromeOptions = new ChromeOptions();
+                    chromeOptions.AddArgument("--start-maximized");
+                    driver = new ChromeDriver(chromeOptions);
                     break;
             }
 
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
             return driver;
         }
     }
