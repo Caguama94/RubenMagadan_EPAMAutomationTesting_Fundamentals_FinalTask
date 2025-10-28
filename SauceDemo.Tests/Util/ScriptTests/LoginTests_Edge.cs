@@ -1,4 +1,6 @@
-﻿namespace SauceDemo.Tests.Tests.Tests
+﻿using SauceDemo.Tests.Util.ScriptTests;
+
+namespace SauceDemo.Tests.Tests.Tests
 {
     public class LoginTests_Edge : LoginTestsBase
     {

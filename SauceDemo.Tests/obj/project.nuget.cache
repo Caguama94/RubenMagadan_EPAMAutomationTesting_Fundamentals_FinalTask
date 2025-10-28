@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "J5kAyT3v9Z8=",
+  "dgSpecHash": "EykUxKQgHOI=",
   "success": true,
   "projectFilePath": "C:\\Users\\alien\\OneDrive\\Documents\\GitHub\\RubenMagadan_EPAMAutomationTesting_Fundamentals_FinalTask\\SauceDemo.Tests\\SauceDemo.Tests.csproj",
   "expectedPackageFiles": [
@@ -36,6 +36,10 @@
     "C:\\Users\\alien\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\alien\\.nuget\\packages\\selenium.support\\4.37.0\\selenium.support.4.37.0.nupkg.sha512",
     "C:\\Users\\alien\\.nuget\\packages\\selenium.webdriver\\4.37.0\\selenium.webdriver.4.37.0.nupkg.sha512",
+    "C:\\Users\\alien\\.nuget\\packages\\serilog\\4.3.0\\serilog.4.3.0.nupkg.sha512",
+    "C:\\Users\\alien\\.nuget\\packages\\serilog.enrichers.process\\3.0.0\\serilog.enrichers.process.3.0.0.nupkg.sha512",
+    "C:\\Users\\alien\\.nuget\\packages\\serilog.enrichers.thread\\4.0.0\\serilog.enrichers.thread.4.0.0.nupkg.sha512",
+    "C:\\Users\\alien\\.nuget\\packages\\serilog.sinks.file\\7.0.0\\serilog.sinks.file.7.0.0.nupkg.sha512",
     "C:\\Users\\alien\\.nuget\\packages\\sharpziplib\\1.4.2\\sharpziplib.1.4.2.nupkg.sha512",
     "C:\\Users\\alien\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\alien\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",

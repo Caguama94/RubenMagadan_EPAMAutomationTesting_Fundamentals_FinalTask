@@ -1,12 +1,12 @@
 ﻿using System;
-using FluentAssertions;
 using OpenQA.Selenium;
+using SauceDemo.Tests.Logging;
 using SauceDemo.Tests.Pages;
 using SauceDemo.Tests.Tests.Drivers;
+using Serilog;
 using Xunit;
-using Xunit.Sdk;
 
-namespace SauceDemo.Tests.Tests.Tests
+namespace SauceDemo.Tests.Util.ScriptTests
 {
     public abstract class LoginTestsBase : IDisposable
     {
@@ -16,13 +16,28 @@ namespace SauceDemo.Tests.Tests.Tests
 
         protected LoginTestsBase()
         {
+            LoggerConfig.Init();
+            Log.Information("Creating driver for {Browser}", BrowserName);
+
             Driver = WebDriverFactory.CreateDriver(BrowserName);
             Page = new LoginPage(Driver);
         }
 
         public void Dispose()
         {
-            Driver?.Quit();
+            try
+            {
+                Log.Information("Disposing driver for {Browser}", BrowserName);
+                Driver?.Quit();
+                Log.Information("Driver disposed for {Browser}", BrowserName);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Error disposing driver for {Browser}", BrowserName);
+                throw;
+            }
+
+
         }
 
         // UC-1 credenciales vacías 
@@ -33,6 +48,7 @@ namespace SauceDemo.Tests.Tests.Tests
         [InlineData("demo", "demo", "Epic sadface: Username is required")]
         public void UC1_EmptyCredentials_ShowsUsernameRequired(string username, string password, string expectedMsg)
         {
+            Log.Information("UC1 start ({Browser}) with user='{User}' pass='{Pass}'", BrowserName, username, password);
 
             Page.GoTo();
             Page.TypeUsername(username);
@@ -43,6 +59,8 @@ namespace SauceDemo.Tests.Tests.Tests
 
             var msg = Page.ReadError();
             Assert.Equal(expectedMsg, msg);
+
+            Log.Information("UC1 end ({Browser}) OK", BrowserName);
         }
 
         // UC-2 solo username 
@@ -53,6 +71,8 @@ namespace SauceDemo.Tests.Tests.Tests
         [InlineData("standard", "NotPassword", "Epic sadface: Password is required")]
         public void UC2_OnlyUsername_ShowsPasswordRequired(string username, string password, string expectedMsg)
         {
+            Log.Information("UC2 start ({Browser}) with user='{User}' pass='{Pass}'", BrowserName, username, password);
+
             Page.GoTo();
 
             Page.TypeUsername(username);
@@ -62,6 +82,8 @@ namespace SauceDemo.Tests.Tests.Tests
 
             var msg = Page.ReadError();
             Assert.Equal(expectedMsg, msg);
+
+            Log.Information("UC2 end ({Browser}) OK", BrowserName);
         }
 
         // UC-3 credenciales válidas
@@ -72,6 +94,8 @@ namespace SauceDemo.Tests.Tests.Tests
         [InlineData("visual_user", "secret_sauce", "Swag Labs")]
         public void UC3_ValidCredentials_ShowsDashboardTitle(string username, string password, string expectedMsg)
         {
+            Log.Information("UC3 start ({Browser}) with user='{User}'", BrowserName, username);
+
             Page.GoTo();
 
             Page.TypeUsername(username);
@@ -82,6 +106,8 @@ namespace SauceDemo.Tests.Tests.Tests
 
             var title = Page.WaitForTitle();
             Assert.Equal(expectedMsg, title);
+
+            Log.Information("UC3 end ({Browser}) OK", BrowserName);
         }
     }
 }
