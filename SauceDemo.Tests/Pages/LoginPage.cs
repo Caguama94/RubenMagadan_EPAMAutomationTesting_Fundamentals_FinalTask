@@ -1,72 +1,83 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using SauceDemo.Tests.Locators;
+﻿using OpenQA.Selenium;
+using SauceDemo.Tests.Locators.LoginPage;
 
 namespace SauceDemo.Tests.Pages
 {
     public class LoginPage : BasePage
     {
-        
 
 
-        //Constructor: recibe el driver y lo pasa a la clase base
+
+        /// <summary>
+        /// Constructor: recibe el driver y lo pasa a la clase base.
+        /// </summary>
         public LoginPage(IWebDriver driver) : base(driver)
         {
         }
 
-        //Metodos
-        //Ir a la pagina principal
+        /// <summary>
+        /// Ir a la página principal.
+        /// </summary>
         public void GoTo()
         {
             Driver.Navigate().GoToUrl("https://www.saucedemo.com/");
         }
 
-        //Escribir el usuario
+        /// <summary>
+        /// Escribir el usuario.
+        /// </summary>
         public void TypeUsername(string? value)
         {
-            var el = FindVisible(LoginPageLocators.Username);//Metodo del BasePage
-            el.Clear();
+            var element = FindVisible(LoginPageLocators.Username);//Metodo del BasePage
+            element.Clear();
             if (!string.IsNullOrEmpty(value))
-                el.SendKeys(value);
+                element.SendKeys(value);
         }
 
-        //Escribir la contraseña
+        /// <summary>
+        /// Escribir la contraseña.
+        /// </summary>
         public void TypePassword(string? value)
         {
-            var el = FindVisible(LoginPageLocators.Password);
-            el.Clear();
+            var element = FindVisible(LoginPageLocators.Password);
+            element.Clear();
             if (!string.IsNullOrEmpty(value))
-                el.SendKeys(value);
+                element.SendKeys(value);
         }
 
-        //Limpiar imputs
+        /// <summary>
+        /// Limpiar inputs del campo de usuario.
+        /// </summary>
         public void ClearUsername()
         {
-            var el = FindVisible(LoginPageLocators.Username);
-            el.Click();
-            el.SendKeys(Keys.Control + "a");
-            el.SendKeys(Keys.Delete);
+            var element = FindVisible(LoginPageLocators.Username);
+            element.Click();
+            element.SendKeys(Keys.Control + "a");
+            element.SendKeys(Keys.Delete);
         }
 
+        /// <summary>
+        /// Limpiar inputs del campo de contraseña.
+        /// </summary>
         public void ClearPassword()
         {
-            var el = FindVisible(LoginPageLocators.Password);
-            el.Click();
-            el.SendKeys(Keys.Control + "a");
-            el.SendKeys(Keys.Delete);
+            var element = FindVisible(LoginPageLocators.Password);
+            element.Click();
+            element.SendKeys(Keys.Control + "a");
+            element.SendKeys(Keys.Delete);
         }
 
+        /// <summary>
+        /// Hacer clic en el botón de inicio de sesión.
+        /// </summary>
         public void ClickLogin()
         {
             FindVisible(LoginPageLocators.LoginButton).Click();
         }
 
-        //Obtener mensaje de error (si existe)
+        /// <summary>
+        /// Obtener el mensaje de error (si existe).
+        /// </summary>
         public string? ReadError()
         {
             try
@@ -77,17 +88,6 @@ namespace SauceDemo.Tests.Pages
             {
                 return null; // si no hay error visible
             }
-        }
-
-        //Esperar y validar el título del dashboard
-        public string WaitForTitle()
-        {
-            var wait = new WebDriverWait(new SystemClock(), Driver, TimeSpan.FromSeconds(10), TimeSpan.FromMilliseconds(250));
-
-            // Espera hasta que el título deje de estar vacío
-            wait.Until(d => !string.IsNullOrEmpty(d.Title));
-
-            return Driver.Title;
         }
     }
 }

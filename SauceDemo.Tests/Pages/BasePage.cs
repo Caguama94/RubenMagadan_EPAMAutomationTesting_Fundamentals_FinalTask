@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
 namespace SauceDemo.Tests.Pages
@@ -17,11 +12,15 @@ namespace SauceDemo.Tests.Pages
         {
             Driver = driver;
 
-            //explicit wait de 10 segundos
+            /// <summary>
+            /// Espera explícita de 10 segundos.
+            /// </summary>
             Wait = new WebDriverWait(new SystemClock(), driver, TimeSpan.FromSeconds(10), TimeSpan.FromMilliseconds(250));
         }
 
-        //Metodo para encontrar un elemento visible
+        /// <summary>
+        /// Método para encontrar un elemento visible en la página.
+        /// </summary>
         protected IWebElement FindVisible(By locator)
         {
             return Wait.Until(d =>

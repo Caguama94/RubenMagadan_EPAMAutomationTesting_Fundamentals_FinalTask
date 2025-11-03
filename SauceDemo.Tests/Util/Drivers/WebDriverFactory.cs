@@ -2,13 +2,21 @@
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Edge;
-using WebDriverManager;
-using WebDriverManager.DriverConfigs.Impl;
 
 namespace SauceDemo.Tests.Tests.Drivers
 {
+    /// <summary>
+    /// Clase de fábrica responsable de crear instancias de WebDriver configuradas para diferentes navegadores.
+    /// </summary>
     public static class WebDriverFactory
     {
+        /// <summary>
+        /// Crea y configura una instancia de WebDriver para el navegador especificado.
+        /// Navegadores compatibles: Chrome, Firefox y Edge.
+        /// </summary>
+        /// <param name="browser">Nombre del navegador (por ejemplo: "chrome", "firefox" o "edge").</param>
+        /// <returns>Una instancia de <see cref="IWebDriver"/> configurada.</returns>
+
         public static IWebDriver CreateDriver(string browser)
         {
             IWebDriver driver;
@@ -16,23 +24,19 @@ namespace SauceDemo.Tests.Tests.Drivers
             switch (browser.ToLower())
             {
                 case "firefox":
-                    new DriverManager().SetUpDriver(new FirefoxConfig());
                     var ffOptions = new FirefoxOptions();
-                    // Firefox a veces no respeta --start-maximized
                     ffOptions.AddArgument("--width=1920");
                     ffOptions.AddArgument("--height=1080");
                     driver = new FirefoxDriver(ffOptions);
                     break;
 
                 case "edge":
-                    new DriverManager().SetUpDriver(new EdgeConfig());
                     var edgeOptions = new EdgeOptions();
                     edgeOptions.AddArgument("--start-maximized");
                     driver = new EdgeDriver(edgeOptions);
                     break;
 
-                default: // chrome
-                    new DriverManager().SetUpDriver(new ChromeConfig());
+                default:
                     var chromeOptions = new ChromeOptions();
                     chromeOptions.AddArgument("--start-maximized");
                     driver = new ChromeDriver(chromeOptions);

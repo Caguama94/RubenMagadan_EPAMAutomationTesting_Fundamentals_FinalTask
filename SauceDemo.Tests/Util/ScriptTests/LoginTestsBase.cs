@@ -1,13 +1,12 @@
-﻿using System;
-using OpenQA.Selenium;
-using SauceDemo.Tests.Logging;
+﻿using OpenQA.Selenium;
+using SauceDemo.Tests.Helpers.Logging;
 using SauceDemo.Tests.Pages;
 using SauceDemo.Tests.Tests.Drivers;
 using Serilog;
-using Xunit;
 
 namespace SauceDemo.Tests.Util.ScriptTests
 {
+
     public abstract class LoginTestsBase : IDisposable
     {
         protected IWebDriver Driver { get; }
@@ -16,6 +15,7 @@ namespace SauceDemo.Tests.Util.ScriptTests
 
         protected LoginTestsBase()
         {
+
             LoggerConfig.Init();
             Log.Information("Creating driver for {Browser}", BrowserName);
 
@@ -40,7 +40,11 @@ namespace SauceDemo.Tests.Util.ScriptTests
 
         }
 
-        // UC-1 credenciales vacías 
+        /// <summary>
+        /// UC-1 credenciales vacías.
+        /// Verifica que se muestre el mensaje “Epic sadface: Username is required”
+        /// cuando los campos de usuario y contraseña quedan vacíos.
+        /// </summary>
         [Theory]
         [InlineData("abcde", "abcde", "Epic sadface: Username is required")]
         [InlineData("test", "test", "Epic sadface: Username is required")]
@@ -63,7 +67,11 @@ namespace SauceDemo.Tests.Util.ScriptTests
             Log.Information("UC1 end ({Browser}) OK", BrowserName);
         }
 
-        // UC-2 solo username 
+        /// <summary>
+        /// UC-2 solo username.
+        /// Verifica que se muestre el mensaje “Epic sadface: Password is required”
+        /// cuando solo se introduce el nombre de usuario.
+        /// </summary>
         [Theory]
         [InlineData("abcde", "NotPassword", "Epic sadface: Password is required")]
         [InlineData("usuario", "NotPassword", "Epic sadface: Password is required")]
@@ -86,7 +94,11 @@ namespace SauceDemo.Tests.Util.ScriptTests
             Log.Information("UC2 end ({Browser}) OK", BrowserName);
         }
 
-        // UC-3 credenciales válidas
+
+        /// <summary>
+        /// UC-3 credenciales válidas.
+        /// Verifica que, al iniciar sesión con credenciales correctas, se muestre el título “Swag Labs”.
+        /// </summary>
         [Theory]
         [InlineData("standard_user", "secret_sauce", "Swag Labs")]
         [InlineData("problem_user", "secret_sauce", "Swag Labs")]
@@ -102,10 +114,10 @@ namespace SauceDemo.Tests.Util.ScriptTests
             Page.TypePassword(password);
             Page.ClickLogin();
 
-            //Page.WaitForTitle().Should().Be(expectedMsg);
+            var inventory=new InventoryPage(Driver);
+            var logoText = inventory.WaitForAppLogo();
 
-            var title = Page.WaitForTitle();
-            Assert.Equal(expectedMsg, title);
+            Assert.Equal(expectedMsg, logoText);
 
             Log.Information("UC3 end ({Browser}) OK", BrowserName);
         }
