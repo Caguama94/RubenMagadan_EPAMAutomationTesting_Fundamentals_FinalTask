@@ -12,6 +12,14 @@ namespace SauceDemo.Tests.Helpers.Logging
         {
             if (_initialized) return;
 
+            // 🔹 Obtener la raíz del proyecto (subiendo desde /bin/Debug/net8.0/)
+            var baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            var projectRoot = Directory.GetParent(baseDir)!.Parent!.Parent!.Parent!.FullName;
+
+            // 🔹 Construir la ruta deseada: SauceDemo.Tests/Helpers/Logs/Logs-.txt
+            var logPath = Path.Combine(projectRoot, "Helpers", "Logs", "Logs-.txt");
+
+
             Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Debug()
             .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
@@ -19,7 +27,7 @@ namespace SauceDemo.Tests.Helpers.Logging
             .Enrich.WithProcessId()
             .Enrich.WithThreadId()
             .WriteTo.File(
-                path: "logs/test-.log",
+                path: logPath,
                 rollingInterval: RollingInterval.Day,
                 retainedFileCountLimit: 7,
                 shared: true,

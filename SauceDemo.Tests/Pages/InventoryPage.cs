@@ -8,8 +8,9 @@ namespace SauceDemo.Tests.Pages
         public InventoryPage(IWebDriver driver) : base(driver)
         {
         }
+
         /// <summary>
-        /// Esperar y validar el título del dashboard.
+        /// Esperar y validar el título.
         /// </summary>
         public string WaitForAppLogo()
         {
