@@ -1,6 +1,4 @@
-﻿using SauceDemo.Tests.Util.ScriptTests;
-
-namespace SauceDemo.Tests.Tests.Tests
+﻿namespace SauceDemo.Tests.Util.Tests
 {
     public class LoginTests_Chrome : LoginTestsBase
     {

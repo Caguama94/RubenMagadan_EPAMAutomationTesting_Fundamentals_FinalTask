@@ -3,7 +3,7 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Edge;
 
-namespace SauceDemo.Tests.Tests.Drivers
+namespace SauceDemo.Tests.Util.Drivers
 {
     /// <summary>
     /// Clase de fábrica responsable de crear instancias de WebDriver configuradas para diferentes navegadores.
