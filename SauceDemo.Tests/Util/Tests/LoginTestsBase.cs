@@ -42,14 +42,14 @@ public abstract class LoginTestsBase : IDisposable
 
     /// <summary>
     /// UC-1 credenciales vacías.
-    /// Verifica que se muestre el mensaje “Epic sadface: Username is required”
+    /// Verifica que se muestre el mensaje “Epic sadface: Username and password do not match any user in this service”
     /// cuando los campos de usuario y contraseña quedan vacíos.
     /// </summary>
     [Theory]
-    [InlineData("abcde", "abcde", "Epic sadface: Username is required")]
-    [InlineData("test", "test", "Epic sadface: Username is required")]
-    [InlineData("user", "pass", "Epic sadface: Username is required")]
-    [InlineData("demo", "demo", "Epic sadface: Username is required")]
+    [InlineData("abcde", "abcde", "Epic sadface: Username and password do not match any user in this service")]
+    [InlineData("test", "test", "Epic sadface: Username and password do not match any user in this service")]
+    [InlineData("user", "pass", "Epic sadface: Username and password do not match any user in this service")]
+    [InlineData("demo", "demo", "Epic sadface: Username and password do not match any user in this service")]
     public void UC1_EmptyCredentials_ShowsUsernameRequired(string username, string password, string expectedMsg)
     {
         Log.Information("UC1 start ({Browser}) with user='{User}' pass='{Pass}'", BrowserName, username, password);
@@ -69,14 +69,14 @@ public abstract class LoginTestsBase : IDisposable
 
     /// <summary>
     /// UC-2 solo username.
-    /// Verifica que se muestre el mensaje “Epic sadface: Password is required”
+    /// Verifica que se muestre el mensaje “Epic sadface: Username and password do not match any user in this service”
     /// cuando solo se introduce el nombre de usuario.
     /// </summary>
     [Theory]
-    [InlineData("abcde", "NotPassword", "Epic sadface: Password is required")]
-    [InlineData("usuario", "NotPassword", "Epic sadface: Password is required")]
-    [InlineData("test_user", "NotPassword", "Epic sadface: Password is required")]
-    [InlineData("standard", "NotPassword", "Epic sadface: Password is required")]
+    [InlineData("abcde", "NotPassword", "Epic sadface: Username and password do not match any user in this service")]
+    [InlineData("usuario", "NotPassword", "Epic sadface: Username and password do not match any user in this service")]
+    [InlineData("test_user", "NotPassword", "Epic sadface: Username and password do not match any user in this service")]
+    [InlineData("standard", "NotPassword", "Epic sadface: Username and password do not match any user in this service")]
     public void UC2_OnlyUsername_ShowsPasswordRequired(string username, string password, string expectedMsg)
     {
         Log.Information("UC2 start ({Browser}) with user='{User}' pass='{Pass}'", BrowserName, username, password);

@@ -1,0 +1,355 @@
+[14:37:35 INF] (P63694/T16) Logger initialized.
+[14:37:35 INF] (P63694/T20) Logger initialized.
+[14:37:35 INF] (P63694/T17) Logger initialized.
+[14:37:35 INF] (P63694/T19) Logger initialized.
+[14:37:35 INF] (P63694/T18) Logger initialized.
+[14:37:35 INF] (P63694/T16) Creating driver for edge
+[14:37:35 INF] (P63694/T20) Creating driver for edge
+[14:37:35 INF] (P63694/T17) Creating driver for chrome
+[14:37:35 INF] (P63694/T19) Creating driver for chrome
+[14:37:35 INF] (P63694/T18) Creating driver for firefox
+[14:37:46 INF] (P63694/T19) UC1 start (chrome) with user='user' pass='pass'
+[14:37:46 INF] (P63694/T17) UC2 start (chrome) with user='abcde' pass='NotPassword'
+[14:37:48 INF] (P63694/T18) UC3 start (firefox) with user='visual_user'
+[14:37:49 INF] (P63694/T17) Disposing driver for chrome
+[14:37:49 INF] (P63694/T19) Disposing driver for chrome
+[14:37:49 INF] (P63694/T17) Driver disposed for chrome
+[14:37:49 INF] (P63694/T17) Creating driver for chrome
+[14:37:49 INF] (P63694/T19) Driver disposed for chrome
+[14:37:51 INF] (P63694/T18) UC3 end (firefox) OK
+[14:37:51 INF] (P63694/T18) Disposing driver for firefox
+[14:37:52 INF] (P63694/T18) Driver disposed for firefox
+[14:37:52 INF] (P63694/T18) Creating driver for firefox
+[14:37:54 INF] (P63694/T20) UC3 start (edge) with user='visual_user'
+[14:37:54 INF] (P63694/T16) UC1 start (edge) with user='test' pass='test'
+[14:37:56 INF] (P63694/T20) UC3 end (edge) OK
+[14:37:56 INF] (P63694/T20) Disposing driver for edge
+[14:37:57 INF] (P63694/T20) Driver disposed for edge
+[14:37:57 INF] (P63694/T20) Creating driver for edge
+[14:37:57 INF] (P63694/T16) Disposing driver for edge
+[14:37:57 INF] (P63694/T16) Driver disposed for edge
+[14:37:58 INF] (P63694/T17) UC2 start (chrome) with user='standard' pass='NotPassword'
+[14:38:00 INF] (P63694/T17) Disposing driver for chrome
+[14:38:00 INF] (P63694/T17) Driver disposed for chrome
+[14:38:00 INF] (P63694/T17) Creating driver for chrome
+[14:38:01 INF] (P63694/T20) UC3 start (edge) with user='performance_glitch_user'
+[14:38:03 INF] (P63694/T18) UC3 start (firefox) with user='performance_glitch_user'
+[14:38:06 INF] (P63694/T17) UC2 start (chrome) with user='test_user' pass='NotPassword'
+[14:38:07 INF] (P63694/T17) Disposing driver for chrome
+[14:38:08 INF] (P63694/T17) Driver disposed for chrome
+[14:38:08 INF] (P63694/T17) Creating driver for chrome
+[14:38:10 INF] (P63694/T20) UC3 end (edge) OK
+[14:38:10 INF] (P63694/T20) Disposing driver for edge
+[14:38:10 INF] (P63694/T20) Driver disposed for edge
+[14:38:10 INF] (P63694/T20) Creating driver for edge
+[14:38:12 INF] (P63694/T17) UC2 start (chrome) with user='usuario' pass='NotPassword'
+[14:38:12 INF] (P63694/T18) UC3 end (firefox) OK
+[14:38:12 INF] (P63694/T18) Disposing driver for firefox
+[14:38:13 INF] (P63694/T20) UC3 start (edge) with user='problem_user'
+[14:38:13 INF] (P63694/T17) Disposing driver for chrome
+[14:38:13 INF] (P63694/T18) Driver disposed for firefox
+[14:38:13 INF] (P63694/T18) Creating driver for firefox
+[14:38:13 INF] (P63694/T17) Driver disposed for chrome
+[14:38:13 INF] (P63694/T17) Creating driver for chrome
+[14:38:15 INF] (P63694/T20) UC3 end (edge) OK
+[14:38:15 INF] (P63694/T20) Disposing driver for edge
+[14:38:15 INF] (P63694/T17) UC3 start (chrome) with user='visual_user'
+[14:38:15 INF] (P63694/T20) Driver disposed for edge
+[14:38:15 INF] (P63694/T20) Creating driver for edge
+[14:38:17 INF] (P63694/T17) UC3 end (chrome) OK
+[14:38:17 INF] (P63694/T17) Disposing driver for chrome
+[14:38:17 INF] (P63694/T17) Driver disposed for chrome
+[14:38:17 INF] (P63694/T17) Creating driver for chrome
+[14:38:18 INF] (P63694/T18) UC3 start (firefox) with user='problem_user'
+[14:38:20 INF] (P63694/T18) UC3 end (firefox) OK
+[14:38:20 INF] (P63694/T20) UC3 start (edge) with user='standard_user'
+[14:38:20 INF] (P63694/T18) Disposing driver for firefox
+[14:38:21 INF] (P63694/T18) Driver disposed for firefox
+[14:38:21 INF] (P63694/T18) Creating driver for firefox
+[14:38:22 INF] (P63694/T20) UC3 end (edge) OK
+[14:38:22 INF] (P63694/T20) Disposing driver for edge
+[14:38:22 INF] (P63694/T17) UC3 start (chrome) with user='performance_glitch_user'
+[14:38:22 INF] (P63694/T20) Driver disposed for edge
+[14:38:22 INF] (P63694/T20) Creating driver for edge
+[14:38:25 INF] (P63694/T20) UC2 start (edge) with user='test_user' pass='NotPassword'
+[14:38:26 INF] (P63694/T18) UC3 start (firefox) with user='standard_user'
+[14:38:27 INF] (P63694/T20) Disposing driver for edge
+[14:38:27 INF] (P63694/T20) Driver disposed for edge
+[14:38:27 INF] (P63694/T20) Creating driver for edge
+[14:38:29 INF] (P63694/T18) UC3 end (firefox) OK
+[14:38:29 INF] (P63694/T18) Disposing driver for firefox
+[14:38:29 INF] (P63694/T17) UC3 end (chrome) OK
+[14:38:29 INF] (P63694/T17) Disposing driver for chrome
+[14:38:29 INF] (P63694/T18) Driver disposed for firefox
+[14:38:29 INF] (P63694/T18) Creating driver for firefox
+[14:38:30 INF] (P63694/T17) Driver disposed for chrome
+[14:38:30 INF] (P63694/T17) Creating driver for chrome
+[14:38:32 INF] (P63694/T20) UC2 start (edge) with user='standard' pass='NotPassword'
+[14:38:32 INF] (P63694/T17) UC3 start (chrome) with user='standard_user'
+[14:38:34 INF] (P63694/T17) UC3 end (chrome) OK
+[14:38:34 INF] (P63694/T17) Disposing driver for chrome
+[14:38:34 INF] (P63694/T20) Disposing driver for edge
+[14:38:34 INF] (P63694/T17) Driver disposed for chrome
+[14:38:34 INF] (P63694/T20) Driver disposed for edge
+[14:38:34 INF] (P63694/T17) Creating driver for chrome
+[14:38:34 INF] (P63694/T20) Creating driver for edge
+[14:38:35 INF] (P63694/T18) UC2 start (firefox) with user='standard' pass='NotPassword'
+[14:38:37 INF] (P63694/T18) Disposing driver for firefox
+[14:38:38 INF] (P63694/T18) Driver disposed for firefox
+[14:38:38 INF] (P63694/T18) Creating driver for firefox
+[14:38:38 INF] (P63694/T17) UC3 start (chrome) with user='problem_user'
+[14:38:38 INF] (P63694/T20) UC2 start (edge) with user='usuario' pass='NotPassword'
+[14:38:40 INF] (P63694/T17) UC3 end (chrome) OK
+[14:38:40 INF] (P63694/T17) Disposing driver for chrome
+[14:38:40 INF] (P63694/T17) Driver disposed for chrome
+[14:38:40 INF] (P63694/T20) Disposing driver for edge
+[14:38:40 INF] (P63694/T17) Creating driver for chrome
+[14:38:40 INF] (P63694/T20) Driver disposed for edge
+[14:38:40 INF] (P63694/T20) Creating driver for edge
+[14:38:43 INF] (P63694/T18) UC2 start (firefox) with user='abcde' pass='NotPassword'
+[14:38:45 INF] (P63694/T20) UC2 start (edge) with user='abcde' pass='NotPassword'
+[14:38:45 INF] (P63694/T17) UC1 start (chrome) with user='demo' pass='demo'
+[14:38:46 INF] (P63694/T18) Disposing driver for firefox
+[14:38:48 INF] (P63694/T17) Disposing driver for chrome
+[14:38:48 INF] (P63694/T20) Disposing driver for edge
+[14:38:48 INF] (P63694/T17) Driver disposed for chrome
+[14:38:48 INF] (P63694/T17) Creating driver for chrome
+[14:38:48 INF] (P63694/T20) Driver disposed for edge
+[14:38:48 INF] (P63694/T20) Creating driver for edge
+[14:38:49 INF] (P63694/T18) Driver disposed for firefox
+[14:38:49 INF] (P63694/T18) Creating driver for firefox
+[14:38:50 INF] (P63694/T17) UC1 start (chrome) with user='test' pass='test'
+[14:38:51 INF] (P63694/T20) UC1 start (edge) with user='abcde' pass='abcde'
+[14:38:52 INF] (P63694/T17) Disposing driver for chrome
+[14:38:52 INF] (P63694/T17) Driver disposed for chrome
+[14:38:52 INF] (P63694/T17) Creating driver for chrome
+[14:38:53 INF] (P63694/T20) Disposing driver for edge
+[14:38:53 INF] (P63694/T20) Driver disposed for edge
+[14:38:53 INF] (P63694/T20) Creating driver for edge
+[14:38:53 INF] (P63694/T18) UC2 start (firefox) with user='test_user' pass='NotPassword'
+[14:38:55 INF] (P63694/T18) Disposing driver for firefox
+[14:38:56 INF] (P63694/T18) Driver disposed for firefox
+[14:38:56 INF] (P63694/T18) Creating driver for firefox
+[14:38:57 INF] (P63694/T17) UC1 start (chrome) with user='abcde' pass='abcde'
+[14:38:57 INF] (P63694/T20) UC1 start (edge) with user='demo' pass='demo'
+[14:38:59 INF] (P63694/T20) Disposing driver for edge
+[14:38:59 INF] (P63694/T17) Disposing driver for chrome
+[14:38:59 INF] (P63694/T20) Driver disposed for edge
+[14:38:59 INF] (P63694/T20) Creating driver for edge
+[14:38:59 INF] (P63694/T17) Driver disposed for chrome
+[14:39:01 INF] (P63694/T18) UC2 start (firefox) with user='usuario' pass='NotPassword'
+[14:39:02 INF] (P63694/T20) UC1 start (edge) with user='user' pass='pass'
+[14:39:02 INF] (P63694/T18) Disposing driver for firefox
+[14:39:03 INF] (P63694/T18) Driver disposed for firefox
+[14:39:03 INF] (P63694/T18) Creating driver for firefox
+[14:39:04 INF] (P63694/T20) Disposing driver for edge
+[14:39:04 INF] (P63694/T20) Driver disposed for edge
+[14:39:06 INF] (P63694/T18) UC1 start (firefox) with user='user' pass='pass'
+[14:39:07 INF] (P63694/T18) Disposing driver for firefox
+[14:39:08 INF] (P63694/T18) Driver disposed for firefox
+[14:39:08 INF] (P63694/T18) Creating driver for firefox
+[14:39:12 INF] (P63694/T18) UC1 start (firefox) with user='demo' pass='demo'
+[14:39:13 INF] (P63694/T18) Disposing driver for firefox
+[14:39:14 INF] (P63694/T18) Driver disposed for firefox
+[14:39:14 INF] (P63694/T18) Creating driver for firefox
+[14:39:17 INF] (P63694/T18) UC1 start (firefox) with user='test' pass='test'
+[14:39:19 INF] (P63694/T18) Disposing driver for firefox
+[14:39:19 INF] (P63694/T18) Driver disposed for firefox
+[14:39:19 INF] (P63694/T18) Creating driver for firefox
+[14:39:23 INF] (P63694/T18) UC1 start (firefox) with user='abcde' pass='abcde'
+[14:39:24 INF] (P63694/T18) Disposing driver for firefox
+[14:39:25 INF] (P63694/T18) Driver disposed for firefox
+[14:44:37 INF] (P65688/T17) Logger initialized.
+[14:44:37 INF] (P65688/T17) Creating driver for chrome
+[14:44:40 INF] (P65688/T17) UC1 start (chrome) with user='test' pass='test'
+[14:44:41 INF] (P65688/T17) UC1 end (chrome) OK
+[14:44:41 INF] (P65688/T17) Disposing driver for chrome
+[14:44:41 INF] (P65688/T17) Driver disposed for chrome
+[14:45:37 INF] (P65795/T18) Logger initialized.
+[14:45:37 INF] (P65795/T18) Creating driver for chrome
+[14:45:39 INF] (P65795/T18) UC2 start (chrome) with user='test_user' pass='NotPassword'
+[14:45:40 INF] (P65795/T18) Disposing driver for chrome
+[14:45:40 INF] (P65795/T18) Driver disposed for chrome
+[14:46:30 INF] (P65916/T14) Logger initialized.
+[14:46:30 INF] (P65916/T14) Creating driver for chrome
+[14:46:31 INF] (P65916/T14) UC2 start (chrome) with user='usuario' pass='NotPassword'
+[14:46:32 INF] (P65916/T14) UC2 end (chrome) OK
+[14:46:32 INF] (P65916/T14) Disposing driver for chrome
+[14:46:32 INF] (P65916/T14) Driver disposed for chrome
+[14:46:32 INF] (P65916/T14) Creating driver for chrome
+[14:46:33 INF] (P65916/T14) UC2 start (chrome) with user='standard' pass='NotPassword'
+[14:46:34 INF] (P65916/T14) UC2 end (chrome) OK
+[14:46:34 INF] (P65916/T14) Disposing driver for chrome
+[14:46:34 INF] (P65916/T14) Driver disposed for chrome
+[14:46:34 INF] (P65916/T14) Creating driver for chrome
+[14:46:35 INF] (P65916/T14) UC2 start (chrome) with user='test_user' pass='NotPassword'
+[14:46:36 INF] (P65916/T14) UC2 end (chrome) OK
+[14:46:36 INF] (P65916/T14) Disposing driver for chrome
+[14:46:36 INF] (P65916/T14) Driver disposed for chrome
+[14:46:36 INF] (P65916/T14) Creating driver for chrome
+[14:46:37 INF] (P65916/T14) UC2 start (chrome) with user='abcde' pass='NotPassword'
+[14:46:38 INF] (P65916/T14) UC2 end (chrome) OK
+[14:46:38 INF] (P65916/T14) Disposing driver for chrome
+[14:46:38 INF] (P65916/T14) Driver disposed for chrome
+[14:46:38 INF] (P65916/T14) Creating driver for chrome
+[14:46:38 INF] (P65916/T14) UC3 start (chrome) with user='visual_user'
+[14:46:39 INF] (P65916/T14) UC3 end (chrome) OK
+[14:46:39 INF] (P65916/T14) Disposing driver for chrome
+[14:46:39 INF] (P65916/T14) Driver disposed for chrome
+[14:46:39 INF] (P65916/T14) Creating driver for chrome
+[14:46:40 INF] (P65916/T14) UC3 start (chrome) with user='performance_glitch_user'
+[14:46:46 INF] (P65916/T14) UC3 end (chrome) OK
+[14:46:46 INF] (P65916/T14) Disposing driver for chrome
+[14:46:46 INF] (P65916/T14) Driver disposed for chrome
+[14:46:46 INF] (P65916/T14) Creating driver for chrome
+[14:46:47 INF] (P65916/T14) UC3 start (chrome) with user='standard_user'
+[14:46:47 INF] (P65916/T14) UC3 end (chrome) OK
+[14:46:47 INF] (P65916/T14) Disposing driver for chrome
+[14:46:47 INF] (P65916/T14) Driver disposed for chrome
+[14:46:47 INF] (P65916/T14) Creating driver for chrome
+[14:46:49 INF] (P65916/T14) UC3 start (chrome) with user='problem_user'
+[14:46:49 INF] (P65916/T14) UC3 end (chrome) OK
+[14:46:49 INF] (P65916/T14) Disposing driver for chrome
+[14:46:49 INF] (P65916/T14) Driver disposed for chrome
+[14:46:49 INF] (P65916/T14) Creating driver for chrome
+[14:46:50 INF] (P65916/T14) UC1 start (chrome) with user='test' pass='test'
+[14:46:51 INF] (P65916/T14) UC1 end (chrome) OK
+[14:46:51 INF] (P65916/T14) Disposing driver for chrome
+[14:46:51 INF] (P65916/T14) Driver disposed for chrome
+[14:46:51 INF] (P65916/T14) Creating driver for chrome
+[14:46:52 INF] (P65916/T14) UC1 start (chrome) with user='abcde' pass='abcde'
+[14:46:53 INF] (P65916/T14) UC1 end (chrome) OK
+[14:46:53 INF] (P65916/T14) Disposing driver for chrome
+[14:46:53 INF] (P65916/T14) Driver disposed for chrome
+[14:46:53 INF] (P65916/T14) Creating driver for chrome
+[14:46:54 INF] (P65916/T14) UC1 start (chrome) with user='user' pass='pass'
+[14:46:54 INF] (P65916/T14) UC1 end (chrome) OK
+[14:46:54 INF] (P65916/T14) Disposing driver for chrome
+[14:46:54 INF] (P65916/T14) Driver disposed for chrome
+[14:46:54 INF] (P65916/T14) Creating driver for chrome
+[14:46:55 INF] (P65916/T14) UC1 start (chrome) with user='demo' pass='demo'
+[14:46:56 INF] (P65916/T14) UC1 end (chrome) OK
+[14:46:56 INF] (P65916/T14) Disposing driver for chrome
+[14:46:56 INF] (P65916/T14) Driver disposed for chrome
+[14:47:07 INF] (P66413/T14) Logger initialized.
+[14:47:07 INF] (P66413/T14) Creating driver for edge
+[14:47:09 INF] (P66413/T14) UC3 start (edge) with user='visual_user'
+[14:47:10 INF] (P66413/T14) UC3 end (edge) OK
+[14:47:10 INF] (P66413/T14) Disposing driver for edge
+[14:47:10 INF] (P66413/T14) Driver disposed for edge
+[14:47:10 INF] (P66413/T14) Creating driver for edge
+[14:47:11 INF] (P66413/T14) UC3 start (edge) with user='performance_glitch_user'
+[14:47:17 INF] (P66413/T14) UC3 end (edge) OK
+[14:47:17 INF] (P66413/T14) Disposing driver for edge
+[14:47:17 INF] (P66413/T14) Driver disposed for edge
+[14:47:17 INF] (P66413/T14) Creating driver for edge
+[14:47:18 INF] (P66413/T14) UC3 start (edge) with user='problem_user'
+[14:47:19 INF] (P66413/T14) UC3 end (edge) OK
+[14:47:19 INF] (P66413/T14) Disposing driver for edge
+[14:47:19 INF] (P66413/T14) Driver disposed for edge
+[14:47:19 INF] (P66413/T14) Creating driver for edge
+[14:47:20 INF] (P66413/T14) UC3 start (edge) with user='standard_user'
+[14:47:21 INF] (P66413/T14) UC3 end (edge) OK
+[14:47:21 INF] (P66413/T14) Disposing driver for edge
+[14:47:21 INF] (P66413/T14) Driver disposed for edge
+[14:47:21 INF] (P66413/T14) Creating driver for edge
+[14:47:22 INF] (P66413/T14) UC1 start (edge) with user='test' pass='test'
+[14:47:23 INF] (P66413/T14) UC1 end (edge) OK
+[14:47:23 INF] (P66413/T14) Disposing driver for edge
+[14:47:23 INF] (P66413/T14) Driver disposed for edge
+[14:47:23 INF] (P66413/T14) Creating driver for edge
+[14:47:24 INF] (P66413/T14) UC1 start (edge) with user='demo' pass='demo'
+[14:47:25 INF] (P66413/T14) UC1 end (edge) OK
+[14:47:25 INF] (P66413/T14) Disposing driver for edge
+[14:47:25 INF] (P66413/T14) Driver disposed for edge
+[14:47:25 INF] (P66413/T14) Creating driver for edge
+[14:47:26 INF] (P66413/T14) UC1 start (edge) with user='abcde' pass='abcde'
+[14:47:26 INF] (P66413/T14) UC1 end (edge) OK
+[14:47:26 INF] (P66413/T14) Disposing driver for edge
+[14:47:26 INF] (P66413/T14) Driver disposed for edge
+[14:47:26 INF] (P66413/T14) Creating driver for edge
+[14:47:27 INF] (P66413/T14) UC1 start (edge) with user='user' pass='pass'
+[14:47:28 INF] (P66413/T14) UC1 end (edge) OK
+[14:47:28 INF] (P66413/T14) Disposing driver for edge
+[14:47:28 INF] (P66413/T14) Driver disposed for edge
+[14:47:28 INF] (P66413/T14) Creating driver for edge
+[14:47:29 INF] (P66413/T14) UC2 start (edge) with user='test_user' pass='NotPassword'
+[14:47:30 INF] (P66413/T14) UC2 end (edge) OK
+[14:47:30 INF] (P66413/T14) Disposing driver for edge
+[14:47:30 INF] (P66413/T14) Driver disposed for edge
+[14:47:30 INF] (P66413/T14) Creating driver for edge
+[14:47:31 INF] (P66413/T14) UC2 start (edge) with user='standard' pass='NotPassword'
+[14:47:32 INF] (P66413/T14) UC2 end (edge) OK
+[14:47:32 INF] (P66413/T14) Disposing driver for edge
+[14:47:32 INF] (P66413/T14) Driver disposed for edge
+[14:47:32 INF] (P66413/T14) Creating driver for edge
+[14:47:34 INF] (P66413/T14) UC2 start (edge) with user='usuario' pass='NotPassword'
+[14:47:35 INF] (P66413/T14) UC2 end (edge) OK
+[14:47:35 INF] (P66413/T14) Disposing driver for edge
+[14:47:35 INF] (P66413/T14) Driver disposed for edge
+[14:47:35 INF] (P66413/T14) Creating driver for edge
+[14:47:36 INF] (P66413/T14) UC2 start (edge) with user='abcde' pass='NotPassword'
+[14:47:37 INF] (P66413/T14) UC2 end (edge) OK
+[14:47:37 INF] (P66413/T14) Disposing driver for edge
+[14:47:37 INF] (P66413/T14) Driver disposed for edge
+[14:47:45 INF] (P66901/T15) Logger initialized.
+[14:47:45 INF] (P66901/T15) Creating driver for firefox
+[14:47:48 INF] (P66901/T15) UC3 start (firefox) with user='visual_user'
+[14:47:49 INF] (P66901/T15) UC3 end (firefox) OK
+[14:47:49 INF] (P66901/T15) Disposing driver for firefox
+[14:47:49 INF] (P66901/T15) Driver disposed for firefox
+[14:47:49 INF] (P66901/T15) Creating driver for firefox
+[14:47:51 INF] (P66901/T15) UC3 start (firefox) with user='performance_glitch_user'
+[14:47:57 INF] (P66901/T15) UC3 end (firefox) OK
+[14:47:57 INF] (P66901/T15) Disposing driver for firefox
+[14:47:58 INF] (P66901/T15) Driver disposed for firefox
+[14:47:58 INF] (P66901/T15) Creating driver for firefox
+[14:48:00 INF] (P66901/T15) UC3 start (firefox) with user='problem_user'
+[14:48:01 INF] (P66901/T15) UC3 end (firefox) OK
+[14:48:01 INF] (P66901/T15) Disposing driver for firefox
+[14:48:01 INF] (P66901/T15) Driver disposed for firefox
+[14:48:01 INF] (P66901/T15) Creating driver for firefox
+[14:48:03 INF] (P66901/T15) UC3 start (firefox) with user='standard_user'
+[14:48:04 INF] (P66901/T15) UC3 end (firefox) OK
+[14:48:04 INF] (P66901/T15) Disposing driver for firefox
+[14:48:04 INF] (P66901/T15) Driver disposed for firefox
+[14:48:04 INF] (P66901/T15) Creating driver for firefox
+[14:48:06 INF] (P66901/T15) UC1 start (firefox) with user='test' pass='test'
+[14:48:07 INF] (P66901/T15) UC1 end (firefox) OK
+[14:48:07 INF] (P66901/T15) Disposing driver for firefox
+[14:48:07 INF] (P66901/T15) Driver disposed for firefox
+[14:48:07 INF] (P66901/T15) Creating driver for firefox
+[14:48:09 INF] (P66901/T15) UC1 start (firefox) with user='user' pass='pass'
+[14:48:10 INF] (P66901/T15) UC1 end (firefox) OK
+[14:48:10 INF] (P66901/T15) Disposing driver for firefox
+[14:48:11 INF] (P66901/T15) Driver disposed for firefox
+[14:48:11 INF] (P66901/T15) Creating driver for firefox
+[14:48:13 INF] (P66901/T15) UC1 start (firefox) with user='abcde' pass='abcde'
+[14:48:14 INF] (P66901/T15) UC1 end (firefox) OK
+[14:48:14 INF] (P66901/T15) Disposing driver for firefox
+[14:48:14 INF] (P66901/T15) Driver disposed for firefox
+[14:48:14 INF] (P66901/T15) Creating driver for firefox
+[14:48:16 INF] (P66901/T15) UC1 start (firefox) with user='demo' pass='demo'
+[14:48:17 INF] (P66901/T15) UC1 end (firefox) OK
+[14:48:17 INF] (P66901/T15) Disposing driver for firefox
+[14:48:17 INF] (P66901/T15) Driver disposed for firefox
+[14:48:17 INF] (P66901/T15) Creating driver for firefox
+[14:48:19 INF] (P66901/T15) UC2 start (firefox) with user='abcde' pass='NotPassword'
+[14:48:20 INF] (P66901/T15) UC2 end (firefox) OK
+[14:48:20 INF] (P66901/T15) Disposing driver for firefox
+[14:48:21 INF] (P66901/T15) Driver disposed for firefox
+[14:48:21 INF] (P66901/T15) Creating driver for firefox
+[14:48:23 INF] (P66901/T15) UC2 start (firefox) with user='usuario' pass='NotPassword'
+[14:48:24 INF] (P66901/T15) UC2 end (firefox) OK
+[14:48:24 INF] (P66901/T15) Disposing driver for firefox
+[14:48:25 INF] (P66901/T15) Driver disposed for firefox
+[14:48:25 INF] (P66901/T15) Creating driver for firefox
+[14:48:27 INF] (P66901/T15) UC2 start (firefox) with user='standard' pass='NotPassword'
+[14:48:28 INF] (P66901/T15) UC2 end (firefox) OK
+[14:48:28 INF] (P66901/T15) Disposing driver for firefox
+[14:48:29 INF] (P66901/T15) Driver disposed for firefox
+[14:48:29 INF] (P66901/T15) Creating driver for firefox
+[14:48:30 INF] (P66901/T15) UC2 start (firefox) with user='test_user' pass='NotPassword'
+[14:48:31 INF] (P66901/T15) UC2 end (firefox) OK
+[14:48:31 INF] (P66901/T15) Disposing driver for firefox
+[14:48:32 INF] (P66901/T15) Driver disposed for firefox
