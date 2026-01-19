@@ -1,43 +1,33 @@
-Task description
+# SauceDemo Automation Testing Suite
 
-Launch URL: https://www.saucedemo.com/
+## Project Overview
+This repository contains a robust automated testing suite for the [SauceDemo](https://www.saucedemo.com/) e-commerce platform. The project is built using **C#** and **.NET**, implementing professional testing standards to ensure high-quality software delivery.
 
-UC-1 Test Login form with empty credentials:
-Type any credentials into "Username" and "Password" fields.
-Clear the inputs.
-Hit the "Login" button.
-Check the error message: "Username is required".
+## Tech Stack
+* **Language:** C#
+* **Framework:** .NET 8.0
+* **Test Runner:** xUnit
+* **Automation Tool:** Selenium WebDriver
+* **Assertions:** Fluent Assertions
+* **Design Pattern:** Page Object Model (POM)
 
-UC-2 Test Login form with credentials by passing Username:
-Type any credentials in username.
-Enter password.
-Clear the "Password" input.
-Hit the "Login" button.
-Check the error message: "Password is required".
+## Key Features & Testing Coverage
+The suite covers critical user journeys, ensuring business logic consistency:
 
-UC-3 Test Login form with credentials by passing Username & Password:
-Type credentials in username which are under Accepted username are sections.
-Enter password as secret sauce.
-Click on Login and validate the title “Swag Labs” in the dashboard.
+* **Authentication Workflows:** Validation of login processes with different user roles.
+* **Product Management:** Verifying sorting functionality (A-Z, Z-A, Price Low-High) and inventory accuracy.
+* **Checkout Pipeline:** Full end-to-end testing of the shopping cart, including information entry and order completion.
 
-Provide parallel execution, add logging for tests and use Data Provider to parametrize tests.
-Make sure that all tasks are supported by these 3 conditions: UC-1; UC-2; UC-3.
+## Project Structure
+The project follows a modular structure to ensure maintainability:
+* **Pages:** Contains the Page Object classes with encapsulated WebElements and actions.
+* **Tests:** Contains the test classes with xUnit facts and theories.
+* **Data:** Managed test data for different scenarios.
 
+## Best Practices Implemented
+* **Fluent Assertions:** For readable and expressive test validations.
+* **Explicit Waits:** Used to handle asynchronous elements and prevent flakiness.
+* **Clean Code:** Adhering to DRY (Don't Repeat Yourself) and SOLID principles.
 
-To perform the task use the various of additional options:
-
-Test Automation tool: Selenium WebDriver
-
-Browsers: 1) Firefox; 2) Chrome
-
-Locators: XPath
-
-Test Runner: xUnit
-
-(Optional) Patterns: 1) Singleton; 2) Adapter; 3) Strategy
-
-(Optional) Test automation approach: BDD
-
-Assertions: Fluent Assertions
-
-(Optional) Loggers: SeriLog
+---
+*Developed as part of a technical specialization in Software Test Automation.*
