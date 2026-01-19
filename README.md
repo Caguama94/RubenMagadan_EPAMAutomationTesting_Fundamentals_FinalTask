@@ -18,12 +18,11 @@ Check the error message: "Password is required".
 UC-3 Test Login form with credentials by passing Username & Password:
 Type credentials in username which are under Accepted username are sections.
 Enter password as secret sauce.
-Click on Login and validate the title ìSwag Labsî in the dashboard.
+Click on Login and validate the title ‚ÄúSwag Labs‚Äù in the dashboard.
 
 Provide parallel execution, add logging for tests and use Data Provider to parametrize tests.
 Make sure that all tasks are supported by these 3 conditions: UC-1; UC-2; UC-3.
 
-Please, add task description as README.md into your solution!
 
 To perform the task use the various of additional options:
 
